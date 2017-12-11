@@ -1,6 +1,5 @@
 # now-env
 
-
 With the help of this package, you can easily set environment variables for the use in development.
 
 If you're already using a `now.json` file or the `now` key in `package.json`, the `env` sub property will be assigned to `process.env` automatically.
