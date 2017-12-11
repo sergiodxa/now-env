@@ -20,7 +20,7 @@ As the last step, register the helper by loading it:
 require('now-env')
 ```
 
-That's all, you can now check in `process.env` for you environment variables!
+That's all, you can now check `process.env` for the environment variables!
 
 > If your application is running inside [Now](https://zeit.co/now) cloud then this module is not going to do anything and let Now set your environment variables.
 
