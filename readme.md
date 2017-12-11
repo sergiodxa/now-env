@@ -15,7 +15,7 @@ Firstly, install the package from [npm](https://www.npmjs.com/package/now-env):
 npm install now-env
 ```
 
-As the last step:
+As the last step, register the helper by loading it:
 
 ```js
 require('now-env')
@@ -88,5 +88,5 @@ If you're already using the `dotenv` module you can switch to `now-env` easily:
 
 1. Create a `now.json` file with the `env` key with every environment variable
 2. Install `now-env`
-3. Change `require('dotenv').config()` with `require('now-env').config()`
-4. That's all!
+3. Change `require('dotenv').config()` with `require('now-env')`
+4. That's it!
