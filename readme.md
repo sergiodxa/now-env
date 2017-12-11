@@ -18,11 +18,7 @@ npm install now-env
 As the last step:
 
 ```js
-// Load it
-const nowEnv = require('now-env')
-
-// And run it
-nowEnv.config()
+require('now-env')
 ```
 
 That's all, you can now check in `process.env` for you environment variables!

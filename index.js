@@ -26,4 +26,5 @@ function config() {
   }
 }
 
-exports.config = config
+// run
+config()
