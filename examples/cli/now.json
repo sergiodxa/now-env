@@ -1,0 +1,6 @@
+{
+  "env": {
+    "NODE_ENV": "production",
+    "TEST": "my-test-env"
+  }
+}

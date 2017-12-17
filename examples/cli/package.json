@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "dev": "node -r now-env index.js"
+  },
+  "dependencies": {
+    "now-env": "^3.0.1"
+  }
+}
