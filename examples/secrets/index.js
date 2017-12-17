@@ -1,6 +1,5 @@
-require('../../index.js').config()
+require('now-env')
 console.log(
   process.env.SECRET,
-  process.env.ANOTHER_SECRET,
   process.env.SECRET_FAIL
 )

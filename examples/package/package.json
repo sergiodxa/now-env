@@ -1,4 +1,7 @@
 {
+  "dependencies": {
+    "now-env": "^3.0.1"
+  },
   "now": {
     "env": {
       "NODE_ENV": "production",
