@@ -6,6 +6,8 @@ If you're already using a `now.json` file or the `now` key in `package.json`, th
 
 In addition, you can store secrets locally, that are specific to the development environment.
 
+**IMPORTANT:** Do not use this package in production. It should only be used locally, while developing. This is because the secrets that you're using locally shouldn't match the ones you use in production (more secure). In production, you should be adding secrets [like this](https://zeit.co/docs/getting-started/secrets).
+
 ## Usage
 
 Firstly, install the package from [npm](https://www.npmjs.com/package/now-env):
