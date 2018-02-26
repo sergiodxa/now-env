@@ -13,7 +13,7 @@ In addition, you can store secrets locally, that are specific to the development
 Firstly, install the package from [npm](https://www.npmjs.com/package/now-env):
 
 ```bash
-npm install now-env
+yarn add now-env
 ```
 
 As the last step, register the helper by loading it:
