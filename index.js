@@ -27,6 +27,3 @@ function config(options = {}) {
     loadPkgJSON(secrets, required)
   }
 }
-
-// run
-config()
