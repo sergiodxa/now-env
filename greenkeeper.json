@@ -1,0 +1,14 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "examples/basic/package.json",
+        "examples/cli/package.json",
+        "examples/package/package.json",
+        "examples/required/package.json",
+        "examples/secrets/package.json",
+        "package.json"
+      ]
+    }
+  }
+}
