@@ -26,6 +26,8 @@ That's all, you can now check `process.env` for the environment variables!
 
 > If your application is running inside [Now](https://zeit.co/now) cloud then this module is not going to do anything and let Now set your environment variables.
 
+If using this with [Next.js](https://github.com/zeit/next.js), follow the example at [`next.js/examples/with-now-env`](https://github.com/zeit/next.js/tree/canary/examples/with-now-env) to make sure `now-env` only runs on the server at build time.
+
 ### Secrets
 
 Most probably you will want to use [secret keys](https://zeit.co/docs/features/env-and-secrets#securing-env-variables-using-secrets) in your `now.json` file. This module allow you to use them too without worries in development.
