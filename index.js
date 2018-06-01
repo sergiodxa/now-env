@@ -6,12 +6,10 @@ const loadRequired = require('./lib/load-required.js')
 const loadNowJSON = require('./lib/load-now-json.js')
 const loadPkgJSON = require('./lib/load-pkg-json.js')
 
-exports = module.exports = config
-
 /**
  * Check if is running inside Now.sh and apply variables and secrets to `process.env`
  */
-function config(options = {}) {
+function config() {
   // only run this if it's not running inside Now.sh
   if (Boolean(process.env.NOW)) return
 
@@ -19,7 +17,7 @@ function config(options = {}) {
   const required = loadRequired()
 
   // load environment variables from now.json
-  const hasLoaded = loadNowJSON(secrets, required, options.path)
+  const hasLoaded = loadNowJSON(secrets, required)
 
   // if now.json doesn't exists
   if (!hasLoaded) {
