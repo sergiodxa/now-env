@@ -85,6 +85,18 @@ Then create a `now-required.json` with the environment keys and values.
 
 Then when starting your application `now-env` will read the `now.json` and get the values from `now-required.json` (and `now-secrets.json`). If a environment key can't be found in `now-required.json` then is going to throw a reference error.
 
+### CLI Usage
+
+Since `now-env` should only run in development it makes sense to add it as a `devDependency` in yourr application `package.json`. In that case you may not want to add `require('now-env')` to your code since it will break in case you only install production dependencies.
+
+You can solve this using now-env only via the CLI with the following command:
+
+```bash
+node -r now-env index.js
+```
+
+Now Node.js will require `now-env` before running your `index.js`. If you define it as a `dev` script in the `package.json` you could have a `start` script just running `node index.js` and not using `now-env` at all!
+
 ## Migrating from `dotenv`
 
 If you're already using the `dotenv` module you can switch to `now-env` easily:
