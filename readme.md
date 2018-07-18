@@ -2,7 +2,7 @@
 
 With the help of this package, you can easily set environment variables for the use in development.
 
-If you're already using a `now.json` file or the `now` key in `package.json`, the `env` sub property will be assigned to `process.env` automatically.
+If you're already using a `now.json` file, the `env` sub property will be assigned to `process.env` automatically.
 
 In addition, you can store secrets locally, that are specific to the development environment.
 
@@ -53,13 +53,13 @@ Then create a `now-secrets.json` with the secrets names and values.
 }
 ```
 
-> This file must be ignored to actually keep them **secret**.
+> This file **must** be ignored to actually keep them **secret**.
 
 Then when starting your application `now-env` will read the `now.json` and get the values from `now-secrets.json`. If a environment key can't be found in `now-secrets.json` (or the file doesn't exists) then is going to use the secret name as value, that means if `DB_PASS` is `@db_pass` and you don't define it inside `now-secrets.json` then the value will be `@db_pass`.
 
 ### Required Variables
 
-Now supports using the `env` key as an array of required values you'll need to provide when deploying. This module also allow you to use them in development.
+Now supports using the `env` key as an array of required values you'll need to provide when deploying. This module also allows you to use them in development.
 
 Create a `now.json` with the array, similar to:
 
