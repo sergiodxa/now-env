@@ -1,0 +1,6 @@
+{
+  "env": {
+    "SECRET": "@my-secret-key",
+    "SECRET_FAIL": "@this-is-not-defined"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "all": "npm run one && npm run two",
+    "one": "cd one && node index.js",
+    "two": "cd two && node index.js"
+  },
+  "dependencies": {
+    "now-env": "^3.0.1"
+  }
+}
