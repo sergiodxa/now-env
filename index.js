@@ -10,7 +10,7 @@ const loadNowJSON = require('./lib/load-now-json.js')
  */
 function config() {
   // only run this if it's not running inside Now.sh
-  if (Boolean(process.env.NOW)) return
+  if (Boolean(process.env.NOW_REGION || process.env.NOW)) return
 
   const secrets = loadSecrets()
   const required = loadRequired()
