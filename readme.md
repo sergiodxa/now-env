@@ -87,7 +87,7 @@ Then when starting your application `now-env` will read the `now.json` and get t
 
 ### CLI Usage
 
-Since `now-env` should only run in development it makes sense to add it as a `devDependency` in yourr application `package.json`. In that case you may not want to add `require('now-env')` to your code since it will break in case you only install production dependencies.
+Since `now-env` should only run in development it makes sense to add it as a `devDependency` in your application `package.json`. In that case you may not want to add `require('now-env')` to your code since it will break in case you only install production dependencies.
 
 You can solve this using now-env only via the CLI with the following command:
 
