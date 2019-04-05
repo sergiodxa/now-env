@@ -6,7 +6,7 @@ If you're already using a `now.json` file, the `env` sub property will be assign
 
 In addition, you can store secrets locally, that are specific to the development environment.
 
-**IMPORTANT:** Do not use this package in production. It should only be used locally, while developing. This is because the secrets that you're using locally shouldn't match the ones you use in production (more secure). In production, you should be adding secrets [like this](https://zeit.co/docs/getting-started/secrets).
+**IMPORTANT:** Do not use this package in production. It should only be used locally, while developing. This is because the secrets that you're using locally shouldn't match the ones you use in production (more secure). In production, you should be adding secrets [like this](https://zeit.co/docs/v2/deployments/environment-variables-and-secrets/).
 
 ## Usage
 
@@ -30,7 +30,7 @@ If using this with [Next.js](https://github.com/zeit/next.js), follow the exampl
 
 ### Secrets
 
-Most probably you will want to use [secret keys](https://zeit.co/docs/features/env-and-secrets#securing-env-variables-using-secrets) in your `now.json` file. This module allow you to use them too without worries in development.
+Most probably you will want to use [secret keys](https://zeit.co/docs/v2/deployments/environment-variables-and-secrets/#securing-environment-variables-using-secrets) in your `now.json` file. This module allow you to use them too without worries in development.
 
 Create a `now.json` with some secret defined as `@secret-name`, similar to:
 
