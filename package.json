@@ -21,5 +21,8 @@
   "files": [
     "lib",
     "index.js"
-  ]
+  ],
+  "dependencies": {
+    "find-up": "^3.0.0"
+  }
 }

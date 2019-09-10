@@ -1,0 +1,6 @@
+{
+  "env": [
+    "REQUIRED_KEY",
+    "REQUIRED_SECRET"
+  ]
+}

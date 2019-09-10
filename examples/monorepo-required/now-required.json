@@ -1,0 +1,4 @@
+{
+  "REQUIRED_KEY": "required-value",
+  "REQUIRED_SECRET": "@required-secret"
+}
